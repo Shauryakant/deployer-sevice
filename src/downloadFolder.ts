@@ -14,8 +14,8 @@ const s3 = new S3Client({
   endpoint: "https://s3.us-east-005.backblazeb2.com",
   region: "us-east-005",
   credentials: {
-    accessKeyId: process.env.ACCESS_KEY_ID!,
-    secretAccessKey: process.env.SECRET_ACCESS_KEY!,
+    accessKeyId: process.env.B2_KEY_ID!,
+    secretAccessKey: process.env.B2_APP_KEY!,
   },
 });
 export async function downloadFolder(prefix: string) {
